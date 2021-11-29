@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <title>Produkter</title>
+</head>
+<body>
+    <header id="navbar-header">
+        <a href="index.html">Hem</a>
+        <a href="products.html">Produkter</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="about.html">Om</a>
+        <a href="documentation.html">Dokumentation</a>
+        <section>
+            <a href="#" onclick="shoppingCart()">Kundvagn</a>
+            <div id="shopping-cart" style="display: none"></div>
+        </section>
+    </header>
+    <main id="wrapper">
+        <div id="text-box">
+            <h1>Produkter</h1>
+            <!-- Flexbox container för produkter -->
+            <div id="container-products">
+                <div class="item-product">
+                    <div class="container-image">
+                        <button type="button" onclick="slideProduct(0, -1)">&#10094;</button>
+                        <img src="products/mouse1_1.jpg">
+                        <button type="button" onclick="slideProduct(0, 1)">&#10095;</button>
+                    </div>
+                    <button type="button" onclick="addItem('mus 1')">Lägg till</button>
+                </div>
+                <div class="item-product">
+                    <div class="container-image">
+                        <button type="button" onclick="slideProduct(1, -1)">&#10094;</button>
+                        <img src="products/mouse2_1.jpg">
+                        <button type="button" onclick="slideProduct(1, 1)">&#10095;</button>
+                    </div>
+                    <button type="button" onclick="addItem('mus 2')">Lägg till</button>
+                </div>
+                <div class="item-product">
+                    <div class="container-image">
+                        <button type="button" onclick="slideProduct(2, -1)">&#10094;</button>
+                        <img src="products/mouse3_1.jpg">
+                        <button type="button" onclick="slideProduct(2, 1)">&#10095;</button>
+                    </div>
+                    <button type="button" onclick="addItem('mus 3')">Lägg till</button>
+                </div>
+                <div class="item-product">
+                    <div class="container-image">
+                        <button type="button" onclick="slideProduct(3, -1)">&#10094;</button>
+                        <img src="products/mouse4_1.jpg">
+                        <button type="button" onclick="slideProduct(3, 1)">&#10095;</button>
+                    </div>
+                    <button type="button" onclick="addItem('mus 4')">Lägg till</button>
+                </div>
+                <div class="item-product">
+                    <div class="container-image">
+                        <button type="button" onclick="slideProduct(4, -1)">&#10094;</button>
+                        <img src="products/mouse5_1.jpg">
+                        <button type="button" onclick="slideProduct(4, 1)">&#10095;</button>
+                    </div>
+                    <button type="button" onclick="addItem('mus 5')">Lägg till</button>
+                </div>
+                <div class="item-product">
+                    <div class="container-image">
+                        <button type="button" onclick="slideProduct(5, -1)">&#10094;</button>
+                        <img src="products/mouse6_1.jpg">
+                        <button type="button" onclick="slideProduct(5, 1)">&#10095;</button>
+                    </div>
+                    <button type="button" onclick="addItem('mus 6')">Lägg till</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -18,6 +18,8 @@ function addItem(item)
     items.push(item);
 }
 
+/* Shopping-cart som använder sig av array för att spara produkter. Kan utvecklas med 
+någon form av databas (SQL) så att informationen faktist stannar när man går över till en annan sida */ 
 function shoppingCart()
 {
     var cl = document.getElementById('shopping-cart');

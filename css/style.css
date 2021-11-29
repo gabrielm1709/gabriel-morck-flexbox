@@ -1,0 +1,180 @@
+html
+{
+    overflow-y: scroll;
+}
+
+body
+{
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+/* a:link: Gör länktexten svart och tar bort underline */
+/* a:visited: Undvik att länk blir lila om man redan besökt den */
+a:link, a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Skapar en underline när pekaren är över länken */
+a:hover
+{
+    text-decoration: underline;
+}
+
+h1
+{
+    margin-bottom: 30px;
+}
+
+button
+{
+    height: auto;
+    width: 150px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+}
+
+button:hover
+{
+    background-color: rgb(100, 100, 100);
+}
+
+li
+{
+    margin-bottom: 20px;
+}
+
+#wrapper
+{
+    margin: 50px 150px 50px 150px;
+}
+
+/* klass för navigation-bar. Jag har valt att ha position: fixed för att jag upplever 
+   att det ser bättre ut och blir enklare för användaren om man scrollat långt ner på en 
+   sida (enklare att ta sig där ifrån) */
+#navbar-header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    outline: 1px solid black;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: fixed;
+    /* 0.9 (fjärde parametern) är opacity för navbaren */
+    background-color: rgba(20, 20, 20, 0.9);
+    font-weight: 300;
+}
+
+#shopping-cart
+{
+    position: absolute;
+    width: 200px;
+    max-height: 300px;
+    padding: 10px;
+    box-shadow: 0 0 0 9999px #000000b0;
+    color: rgb(20, 20, 20);
+    background-color: white;
+    font-size: 20px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+#text-box
+{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* container för startsidan (index.html) */
+#container-start
+{
+    display: flex;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 10px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.item-start
+{
+    height: 400px;
+    width: 500px;
+    outline: 2px solid rgb(20, 20, 20, 0.5);
+}
+
+.item-start:hover
+{
+    transform: scale(1.1);
+}
+
+/* Container för alla produkter. Wrap gör så att produkterna (bilderna) börjar 
+   på en ny rad när det inte längre finns plats */
+#container-products
+{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+    column-gap: 10px;
+}
+
+.item-product
+{    
+    width: 500px;
+    height: auto;
+    background-color: white;
+}
+
+.item-product img
+{
+    width: 500px;
+    height: 400px;
+}
+
+#about-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img
+{
+    width: 850px;
+    height: 450px;
+}
+
+/* container för bild och sliders */
+.container-image
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-image button
+{
+    padding: 3px;
+    color: black;
+    background-color: white;
+}
+
+.container-image button:hover
+{
+    color: rgb(255, 255, 240);
+    background-color: rgb(20, 20, 20, 0.7);
+}
+

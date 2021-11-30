@@ -2,7 +2,7 @@
 var items = [];
 
 /* Lista med alla produktbilder (2d) */ 
-var images = [["img/mouse1_1.jpg", "img/mouse1_2.jpg"], ["img/mouse2_1.jpg", "img/mouse2_2.jpg"], ["img/mouse3_1.jpg", "img/mouse3_2.jpg", "img/mouse3_3.jpg"], 
+var images = [["img/mouse1_1.jpg", "img/mouse1_2.jpg"], ["img/mouse2_1.jpg", "img/mouse2_2.jpg", "img/mouse2_3.jpg"], ["img/mouse3_1.jpg", "img/mouse3_2.jpg", "img/mouse3_3.jpg"], 
               ["img/mouse4_1.jpg", "img/mouse4_2.jpg"], ["img/mouse5_1.jpg", "img/mouse5_2.jpg"], ["img/mouse6_1.jpg", "img/mouse6_2.jpg"]];
 
 /* Lista för alla nuvarande positioner i images[] för varje produkt */ 

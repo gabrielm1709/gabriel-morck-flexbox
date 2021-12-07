@@ -22,23 +22,23 @@ function addItem(item)
 någon form av databas (SQL) så att informationen faktist stannar när man går över till en annan sida */ 
 function shoppingCart()
 {
-    let cl = document.getElementById('shopping-cart');
-    cl.innerHTML = '';
+    let element = document.getElementById('shopping-cart');
+    element.innerHTML = '';
     
-    if(cl.style.display == 'block')
+    if(element.style.display == 'block')
     {
-        cl.style.display = 'none';
+        element.style.display = 'none';
     }
 
     else
     {
-        cl.style.display = 'block';
+        element.style.display = 'block';
     }
 
     /* om produktlistan är tom (d.v.s om användaren inte har lagt någon vara i kundvagnen) så skriv ut att den är tom */ 
     if(items.length == 0)
     {
-        cl.innerHTML='Din kundvagn är tom';
+        element.innerHTML='Din kundvagn är tom';
     }
 
     /* om kundvagnen inte är tom (length > 0) så ska alla produkter i items skrivas ut i ordning med hjälp av en for-loop */ 
@@ -46,12 +46,12 @@ function shoppingCart()
     {
         for(let i=0;i<items.length;i++)
         {
-            cl.innerHTML += items[i];
+            element.innerHTML += items[i];
 
             /* Så länge det inte är sista produkten i shopping-carten så ska det vara ett mellanrum mellan varje produkt */
             if(i != items.length-1)
             {
-                cl.innerHTML += '<br><br>';
+                element.innerHTML += '<br><br>';
             }
         }
     }

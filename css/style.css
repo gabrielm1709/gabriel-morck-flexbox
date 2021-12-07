@@ -78,6 +78,7 @@ li
     font-weight: 300;
 }
 
+/* Shopping cart med box-shadow. */
 #shopping-cart
 {
     position: absolute;
@@ -109,6 +110,7 @@ li
     margin-top: 40px;
 }
 
+/* Item för startsida */
 .item-start
 {
     height: 400px;
@@ -116,6 +118,7 @@ li
     outline: 2px solid rgb(20, 20, 20, 0.5);
 }
 
+/* Gör item större på hover */
 .item-start:hover
 {
     transform: scale(1.1);
@@ -132,6 +135,7 @@ li
     column-gap: 10px;
 }
 
+/* Item för produkter */
 .item-product
 {    
     width: 500px;

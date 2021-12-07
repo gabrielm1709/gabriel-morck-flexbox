@@ -1,12 +1,12 @@
 /* Lista där alla produkter som lagts i kundvagnen sparas  */
-var items = [];
+let items = [];
 
 /* Lista med alla produktbilder (2d) */ 
-var images = [["img/mouse1_1.jpg", "img/mouse1_2.jpg"], ["img/mouse2_1.jpg", "img/mouse2_2.jpg", "img/mouse2_3.jpg"], ["img/mouse3_1.jpg", "img/mouse3_2.jpg", "img/mouse3_3.jpg"], 
+const images = [["img/mouse1_1.jpg", "img/mouse1_2.jpg"], ["img/mouse2_1.jpg", "img/mouse2_2.jpg", "img/mouse2_3.jpg"], ["img/mouse3_1.jpg", "img/mouse3_2.jpg", "img/mouse3_3.jpg"], 
               ["img/mouse4_1.jpg", "img/mouse4_2.jpg"], ["img/mouse5_1.jpg", "img/mouse5_2.jpg"], ["img/mouse6_1.jpg", "img/mouse6_2.jpg"]];
 
 /* Lista för alla nuvarande positioner i images[] för varje produkt */ 
-var imagepos = [];
+let imagepos = [];
 for(let i = 0; i < images.length; i++)
 {
     imagepos.push(0);
@@ -22,7 +22,7 @@ function addItem(item)
 någon form av databas (SQL) så att informationen faktist stannar när man går över till en annan sida */ 
 function shoppingCart()
 {
-    var cl = document.getElementById('shopping-cart');
+    let cl = document.getElementById('shopping-cart');
     cl.innerHTML = '';
     
     if(cl.style.display == 'block')

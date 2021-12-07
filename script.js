@@ -77,6 +77,6 @@ function slideProduct(index, direction)
         imagepos[index]+=direction; 
     }
 
-    /* Hitta alla <img> taggar och ändra src */ 
+    /* Hitta alla <img> taggar och ändra src på en specifik bild */ 
     document.getElementsByTagName("img")[index].src = images[index][imagepos[index]];
 }

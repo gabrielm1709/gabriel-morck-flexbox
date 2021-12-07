@@ -22,6 +22,7 @@ function addItem(item)
 någon form av databas (SQL) så att informationen faktist stannar när man går över till en annan sida */ 
 function shoppingCart()
 {
+    /* Hitta shopping-cart element med id för att sedan kunna ändra informationen med innerHTML */
     let element = document.getElementById('shopping-cart');
     element.innerHTML = '';
     

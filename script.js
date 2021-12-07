@@ -48,7 +48,8 @@ function shoppingCart()
         {
             cl.innerHTML += items[i];
 
-            if(i+1 != items.length)
+            /* Så länge det inte är sista produkten i shopping-carten så ska det vara ett mellanrum mellan varje produkt */
+            if(i != items.length-1)
             {
                 cl.innerHTML += '<br><br>';
             }
